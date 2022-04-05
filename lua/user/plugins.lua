@@ -66,6 +66,11 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
 
+  -- Telescope
+  -- Note: You will need to install an external grep tool. Look at github for preferences
+  use "nvim-telescope/telescope.nvim"
+  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
