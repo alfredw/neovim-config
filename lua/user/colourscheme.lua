@@ -4,6 +4,7 @@
 -- night
 -- day
 local colorscheme = "tokyonight"
+-- local colorscheme = "darkplus"
 
 vim.g.tokyonight_style = "storm"
 
